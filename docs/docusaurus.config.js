@@ -11,15 +11,16 @@ const config = {
     favicon: "img/favicon.ico",
 
     // Set the production url of your site here
-    url: "https://your-docusaurus-test-site.com",
+    url: "https://github.com",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: "/",
+    baseUrl: "/CaptureTheFlag/",
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
     organizationName: "mnaray", // Usually your GitHub org/user name.
     projectName: "CaptureTheFlag", // Usually your repo name.
+    trailingSlash: false, // Enables the default trailing slash.
 
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
