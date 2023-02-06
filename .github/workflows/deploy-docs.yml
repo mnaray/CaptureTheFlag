@@ -5,7 +5,7 @@ defaults:
         working-directory: docs
 
 on:
-    push:
+    pull_request:
         branches:
             - main
         paths: CaptureTheFlag/docs/**
