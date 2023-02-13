@@ -11,7 +11,7 @@ const config = {
     favicon: "img/favicon.ico",
 
     // Set the production url of your site here
-    url: "https://github.com",
+    url: "https://mnaray.github.io",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: "/CaptureTheFlag/",
@@ -42,7 +42,7 @@ const config = {
                     sidebarPath: require.resolve("./sidebars.js"),
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
-                    editUrl: "https://github.com/mnaray/CaptureTheFlag"
+                    editUrl: "https://github.com/mnaray/CaptureTheFlag/edit/main/docs/"
                 },
                 blog: false,
                 theme: {
@@ -96,8 +96,16 @@ const config = {
                         title: "Doku",
                         items: [
                             {
-                                label: "Projektdokumenatation",
-                                to: "/"
+                                label: "Projektdokumentaion",
+                                to: "/docs/Dokumentation"
+                            },
+                            {
+                                label: "Anleitung",
+                                to: "/docs/Anleitung"
+                            },
+                            {
+                                label: "Lösungen",
+                                to: "/docs/Lösungen"
                             }
                         ]
                     },
