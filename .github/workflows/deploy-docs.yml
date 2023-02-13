@@ -16,7 +16,7 @@ on:
 
 jobs:
     deploy:
-        name: Deploy to GitHub Pages
+        name: Deploy docs to GitHub Pages
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
@@ -28,5 +28,9 @@ jobs:
 
             - name: Install dependencies
               run: npm ci
+            - name: Set credentials
+              run: |
+                  git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+                  git config user.name github-actions[bot]
             - name: Deploy website
-              run: GIT_USER=mnaray npm run deploy
+              run: GIT_USER=github-actions[bot] npm run deploy
