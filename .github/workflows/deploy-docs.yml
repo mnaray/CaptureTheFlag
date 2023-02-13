@@ -34,4 +34,4 @@ jobs:
                   git config --global user.name mnaray
                   git remote set-url origin https://mnaray:${{ secrets.GH_PAT }}@github.com/mnaray/CaptureTheFlag.git
             - name: Deploy website
-              run: GIT_USER=github-actions[bot] npm run deploy
+              run: GIT_USER=mnaray GIT_PASS=${{ secrets.GH_PAT }} npm run deploy
