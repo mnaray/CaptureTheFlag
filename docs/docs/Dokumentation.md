@@ -14,6 +14,8 @@ Zur Kontrolle/Auswertung des Projekts werden wir unsere CTFs gegenseitig lösen 
 
 # Informieren
 
+In diesem Kapitel der Dokumentation wird die Phase, in welcher wir uns noch als Gruppe informieren, festgehalten. Hier setzen wir auch noch die Anforderungen an das Projekt und vermerken die verwendeten Informationsquellen.
+
 ## Was versteht man unter einem CTF?
 
 CTF steht für **Capture The Flag**. Das ist ein Genre an Spiel, in welchem man eine Flagge oder ein sonstiges Ziel finden und einholen muss. Von diesem Spiel gibt es viele verschiedene Versionen in diversen Bereichen. Diese reichen von Spielen in der echten Welt bis zu digitalen Versionen als Videospiel oder sogar als eine Art "Hacking Challenge" im Bereich der Cybersicherheit.
