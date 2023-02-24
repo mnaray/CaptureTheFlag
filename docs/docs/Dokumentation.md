@@ -45,6 +45,15 @@ In der folgenden Tabelle sind die Anforderungen für das Projekt vorzufinden. Di
 
 ### Technologien
 
+Für dieses Projekt habe ich folgende Technologien verwendet:
+
+- [Docker](https://www.docker.com/)
+- [MD5 Hashing](https://de.wikipedia.org/wiki/Message-Digest_Algorithm_5)
+- [Python 3.11.2](https://www.python.org/)
+- [C++](https://de.wikipedia.org/wiki/C%2B%2B#:~:text=C%2B%2B%20ist%20eine%20von,eine%20Programmierung%20auf%20hohem%20Abstraktionsniveau.)
+- [gcc | g++](https://gcc.gnu.org/)
+- [NMAP](https://nmap.org/)
+
 ### Quellen
 
 Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als Hilfe oder Orientation verwendet wurden.
