@@ -51,7 +51,7 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 :::caution
 
-Diese Liste Quellen habe nur ich verwendet! Meine Gruppenmitglieder haben evtl. ein anderes Quellenverzeichnis.
+Diese Liste an Quellen habe nur ich verwendet! Meine Gruppenmitglieder haben evtl. ein anderes Quellenverzeichnis.
 
 :::
 
