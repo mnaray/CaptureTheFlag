@@ -6,15 +6,13 @@ title: Dokumentation
 
 Dies ist die Dokumentation des ganzen Projekts. Sie wurde nach IPERKA umgesetzt. Es wird der Ablauf und die Vorgehensweise des ganzen Projekts dokumentiert.
 
-Dies ist ein Gruppenprojekt, aber es wird praktisch bis zur Kontrolle/Auswertung zusammen gearbeitet.
-Das Informieren und das Erfassen der Anforderungen wird noch in Zusammenarbeit gemacht, damit wir mit denselben Voraussetzungen arbeiten können. Das eigentliche Realisieren und das detailliertere Planen des Projekts wird in Einzelarbeit durchgeführt.
-Zur Kontrolle/Auswertung des Projekts werden wir unsere CTFs gegenseitig lösen und zusammen auswerten.
+In diesem Gruppenprojekt erstellen wir ein Proof-Of-Concept für ein Capture The Flag Spiel. Das eigentliche Spiel wird nicht implementiert, es wird nur bewiesen, wie und weshalb es möglich ist dieses umzusetzen.
 
 :::
 
 ## Informieren
 
-In diesem Kapitel der Dokumentation wird die Phase, in welcher wir uns noch als Gruppe informieren, festgehalten. Hier setzen wir auch noch die Anforderungen an das Projekt und vermerken die verwendeten Informationsquellen.
+In diesem Kapitel der Dokumentation wird die Phase festgehalten, in welcher wir uns als Gruppe über das Nötige informieren. Dazu gehören auch die Anforderungen, die Zeiteinteilung und die Auflistung [**aller verwendeten Quellen**](#quellen).
 
 ### Was versteht man unter einem CTF?
 
@@ -22,12 +20,13 @@ CTF steht für **Capture The Flag**. Das ist ein Genre an Spiel, in welchem man 
 
 ### Was ist unser Ziel?
 
-In diesem Projekt erstellen wir uns gegenseitig eine genau solche Challenge. Das Ziel ist es in dieser Challenge kleine "Hindernisse" aufzustellen, welche den Spieler daran hindern sollen die Flagge zu finden. Natürlich soll der Spieler aber noch trotzdem eine Chance haben. Wenn möglich soll beim Spielen des Spiels ein Lerneffekt zustande kommen.
+Unser Ziel ist es ein Proof-Of-Concept für ein CTF zu erstellen. Mit diesem wollen wir beweisen können, dass es möglich ist dieses Projekt umzusetzen. Das eigentliche erste von zwei Projekten besteht nur aus dem Proof-Of-Concept, erst ein zweites Projekt ist die Realisierung des echten CTF.
+
+Unter dem Proof-Of-Concept (PoC) verstehen wir eine Art "Dummyversion" des echten Spiels. Es soll noch nicht alle Anforderungen erfüllen können, nur ein paar der wichtigsten. Es soll vorweisen können, dass die funktionalen Anforderungen erreichbar sind.
 
 ### Anforderungen
 
-In der folgenden Tabelle sind die Anforderungen für das Projekt vorzufinden. Diese sind von alle Gruppenmitgliedern des Projekts zu verwenden.
-
+In der folgenden Tabelle sind die Anforderungen für das Projekt vorzufinden.
 
 | Nr. | Muss/Kann | funk./qual. | Beschreibung                                                                                                             |
 | ----- | ----------- | ------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -58,11 +57,7 @@ Für dieses Projekt habe ich folgende Technologien verwendet:
 
 Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als Hilfe oder Orientation verwendet wurden.
 
-:::caution
-
-Diese Liste an Quellen habe nur ich verwendet! Meine Gruppenmitglieder haben evtl. ein anderes Quellenverzeichnis.
-
-:::
+- [Quellen](https://some-source.com)
 
 ## Planen
 
