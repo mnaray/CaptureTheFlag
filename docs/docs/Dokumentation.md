@@ -59,7 +59,8 @@ Für dieses Projekt habe ich folgende Technologien verwendet:
 
 Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als Hilfe oder Orientation verwendet wurden.
 
-- [Quellen](https://some-source.com)
+- [Docker](https://www.docker.com/)
+- [Docker Hub](https://hub.docker.com/)
 
 ## Planen
 
