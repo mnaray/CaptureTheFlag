@@ -1,7 +1,10 @@
----
+``
+--
+
 sidebar_position: 1
 title: Dokumentation
----
+--------------------
+
 :::note
 
 Dies ist die Dokumentation des ganzen Projekts. Sie wurde nach IPERKA umgesetzt. Es wird der Ablauf und die Vorgehensweise des ganzen Projekts dokumentiert.
@@ -93,6 +96,18 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 ### Testfälle
 
+
+| Testf.<br />Nr. | Anf.<br />Nr. | Voraussetzung                             | Testumgebung | Eingabe                                                                                                     | Erw. Ausgabe                                               |
+| :---------------- | --------------- | :------------------------------------------ | -------------- | :------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1.1             | 1             | PoC ist vorhanden                         |              | Image von der Registry pullen und mit`docker run` starten. Als nächstes den Befehl `docker ps` ausführen. | Container erscheint in der ausgegebenen Liste.             |
+| 2.1             | 2             | PoC ist am Laufen                         |              | Mit der Lösung geht man duchr das Spiel bis man fertig ist.                                                | Eine Flagge erscheint.                                     |
+| 3.1             | 3             | Docusaurus Unterseite Lösungen ist offen |              | Die Lösungen durchschuen.                                                                                  | Die Barrieren haben unterschiedliche Lösungswege          |
+| 4.1             | 4             | PoC ist am Laufen                         |              | Ohne Lösungen die Barrieren überwinden                                                                    | IT-Lehrperson oder Klassenkamerad hat die Flagge vor sich. |
+| 5.1             | 5             | Docusaurus Unterseite Anleitung ist offen |              | Benutzer fürht die Anweisungen in der Anleitung durch.                                                     | Benutzer ist startklar und weiss was er/sie zu tun hat.    |
+| 6.1             | 6             | PoC ist am Laufen                         |              | Alle Flaggen finden.                                                                                        | Die Flaggen sind im Format: flag{challenge_name}           |
+| 7.1             | 7             |                                           |              |                                                                                                             |                                                            |
+|                 |               |                                           |              |                                                                                                             |                                                            |
+
 ## Entscheiden
 
 ### Docker oder VM?
@@ -115,7 +130,19 @@ Das PoC soll nur als Beweis dienen, dass wir in der Lage sind mit den vorhandene
 
 ### Wie erstellen wir die Images?
 
+Lokal oder mit einem GitHub Workflow?
+Wenn wir die Images lokal bearbeiten, haben wir viel zu tun. Dafür aber die volle Kontrolle über alles.
+Mit dem GitHub Workflow läuft alles automatisch. Dadurch haben wir keine zusätzlichen Arbeiten, sondern können das Erstellen vom Images einfach vergessen.
+
 ### Welche Registry?
+
+In Sachen Registries hatten wir zwei Optionen, welche unsere Bedürfnisse nach Komfort erfüllten. Eine Option war das offizielle Docker-Hub von Docker, die andere war das Registry von GitHub. Natürlich gibt es viele Alternativen, aber diese zwei sind einfach am einfachsten zu brauchen für unseren Use-Case. Docker-Hub ist das offizielle Registry von Docker und ist in der Software als Default integriert. GitHub ist unser Remote-Host für die Repository.
+
+Der hauptsächlichen Unterschiede liegen in diesen Punkten: die Möglichkeit private Images zu haben und die Integration der Registry in docker.
+
+An sich ist es für uns kein Problem die Images öffentlich zu haben, da schon die Repository öffentlich ist. Das einzige Problem, das wir haben könnten, ist die um einiges längere URL zur Registry. Bei Docker-Hub kann man die domain einfach weg lassen und nur mit dem Imagenamen arbeiten, jedoch muss man bei github immer die ganze Domain ausschreiben.
+
+Es könnte nerviger werden, immer alles auszuschreiben, jedoch würden wir meistens die images über eine CI-Pipeline in die Registry pushen. Schlussendlich macht dies das Problem irrelevant.
 
 ## Realisieren
 
