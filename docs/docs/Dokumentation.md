@@ -49,6 +49,7 @@ In der folgenden Tabelle sind die Anforderungen für das Projekt vorzufinden.
 Für dieses Projekt habe ich folgende Technologien verwendet:
 
 - [Docker](https://www.docker.com/)
+- [git (zur Versionierung)](https://git-scm.com/)
 - [MD5 Hashing](https://de.wikipedia.org/wiki/Message-Digest_Algorithm_5)
 - [Python 3.11.2](https://www.python.org/)
 - [C++](https://de.wikipedia.org/wiki/C%2B%2B#:~:text=C%2B%2B%20ist%20eine%20von,eine%20Programmierung%20auf%20hohem%20Abstraktionsniveau.)
