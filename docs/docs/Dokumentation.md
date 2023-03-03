@@ -97,6 +97,10 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 ### Docker oder VM?
 
+Weil wir momentan parallel zu diesem Project ein Docker Modul bearbeiten, haben wir uns für Docker entschieden. Wir wollen das Geübte direkt anwenden und unser Können mit Docker obtimieren.
+
+Weitere Gründe waren, dass Docker um einiges schneller ist als eine VM, dass es weniger Speicher benötigt und das es replizierbar ist.
+
 ### PoC oder volles CTF?
 
 ### Wie erstellen wir die Images?
