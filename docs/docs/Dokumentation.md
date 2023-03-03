@@ -99,6 +99,16 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 ### PoC oder volles CTF?
 
+Ursprünglich wollten wir bei diesem Projekt ein volles Capture the Flag erstellen. Die Idee war, entweder meherere kleine Level zu haben oder ein sehr grosses Puzzle mit nur eine Flagge zu erstellen.
+
+Da wir zuvor noch nie Projekte mit solch "offenen Anforderungen" hatten, haben wir uns an die zuständige Lehrperson gewendet und um ein wenig Rat gebeten. Er hat uns dann vorgeschlagen, dass wir ein Proof of Concept machen könnten, damit das Projekt nicht zu gross wird. Wir haben diesen Vorschlag uns zu Herzen genommen und uns für das Proof of Concept entschieden.
+
+:::note
+
+Das PoC soll nur als Beweis dienen, dass wir in der Lage sind mit den vorhandenen Ressourcen ein volles CTF zu erstellen. Es soll nur ein Container-Image sein, mit einer Dummyversion vom Spiel.
+
+:::
+
 ### Wie erstellen wir die Images?
 
 ### Welche Registry?
