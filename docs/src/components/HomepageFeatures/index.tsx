@@ -18,8 +18,8 @@ const FeatureList: FeatureItem[] = [
                 <a href="https://www.phinst.unibe.ch/ueber_uns/lehrlingsausbildung/website_polymechaniker/ausbildung/iperka/index_ger.html#:~:text=Die%20Projektmethode%20IPERKA%20geht%20davon,Projektablauf%2C%20verlangt%20eine%20strukturierte%20Vorgehensweise.">
                     IPERKA-Workflow
                 </a>{" "}
-                umgesetzt und entsprechend begleitend <a href="/docs/Dokumentation">dokumentiert</a>
-                .
+                umgesetzt und entsprechend begleitend{" "}
+                <a href="/CaptureTheFlag/docs/Dokumentation">dokumentiert</a>.
             </>
         )
     },
@@ -28,7 +28,8 @@ const FeatureList: FeatureItem[] = [
         Svg: require("@site/static/img/step.svg").default,
         description: (
             <>
-                Es ist eine <a href="/docs/Anleitung">Schrit-für-Schritt-Anleitung</a> für einen
+                Es ist eine{" "}
+                <a href="/CaptureTheFlag/docs/Anleitung">Schrit-für-Schritt-Anleitung</a> für einen
                 schnellen Start mit inbegriffen.
             </>
         )
@@ -39,9 +40,9 @@ const FeatureList: FeatureItem[] = [
         description: (
             <>
                 Falls es dazu kommen soll, dass man an einer Stelle stecken bleibt, sind{" "}
-                <a href="/docs/Lösungen">Lösungen</a> vorhanden. Diese sollen aber nur wirklich im
-                Fall der Fälle verwendet werden, um den eigentlichen Sinn dieses Spiels nicht zu
-                verderben.
+                <a href="/CaptureTheFlag/docs/Lösungen">Lösungen</a> vorhanden. Diese sollen aber
+                nur wirklich im Fall der Fälle verwendet werden, um den eigentlichen Sinn dieses
+                Spiels nicht zu verderben.
             </>
         )
     }
