@@ -95,6 +95,14 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 ## Entscheiden
 
+### Docker oder VM?
+
+### PoC oder volles CTF?
+
+### Wie erstellen wir die Images?
+
+### Welche Registry?
+
 ## Realisieren
 
 ## Kontrollieren
