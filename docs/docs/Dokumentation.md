@@ -1,7 +1,10 @@
----
+``
+--
+
 sidebar_position: 1
 title: Dokumentation
----
+--------------------
+
 :::note
 
 Dies ist die Dokumentation des ganzen Projekts. Sie wurde nach IPERKA umgesetzt. Es wird der Ablauf und die Vorgehensweise des ganzen Projekts dokumentiert.
@@ -114,6 +117,10 @@ Das PoC soll nur als Beweis dienen, dass wir in der Lage sind mit den vorhandene
 :::
 
 ### Wie erstellen wir die Images?
+
+Lokal oder mit einem GitHub Workflow?
+Wenn wir die Images lokal bearbeiten, haben wir viel zu tun. Dafür aber die volle Kontrolle über alles.
+Mit dem GitHub Workflow läuft alles automatisch. Dadurch haben wir keine zusätzlichen Arbeiten, sondern können das Erstellen vom Images einfach vergessen.
 
 ### Welche Registry?
 
