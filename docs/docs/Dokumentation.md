@@ -117,6 +117,14 @@ Das PoC soll nur als Beweis dienen, dass wir in der Lage sind mit den vorhandene
 
 ### Welche Registry?
 
+In Sachen Registries hatten wir zwei Optionen, welche unsere Bedürfnisse nach Komfort erfüllten. Eine Option war das offizielle Docker-Hub von Docker, die andere war das Registry von GitHub. Natürlich gibt es viele Alternativen, aber diese zwei sind einfach am einfachsten zu brauchen für unseren Use-Case. Docker-Hub ist das offizielle Registry von Docker und ist in der Software als Default integriert. GitHub ist unser Remote-Host für die Repository.
+
+Der hauptsächlichen Unterschiede liegen in diesen Punkten: die Möglichkeit private Images zu haben und die Integration der Registry in docker.
+
+An sich ist es für uns kein Problem die Images öffentlich zu haben, da schon die Repository öffentlich ist. Das einzige Problem, das wir haben könnten, ist die um einiges längere URL zur Registry. Bei Docker-Hub kann man die domain einfach weg lassen und nur mit dem Imagenamen arbeiten, jedoch muss man bei github immer die ganze Domain ausschreiben.
+
+Es könnte nerviger werden, immer alles auszuschreiben, jedoch würden wir meistens die images über eine CI-Pipeline in die Registry pushen. Schlussendlich macht dies das Problem irrelevant.
+
 ## Realisieren
 
 ## Kontrollieren
