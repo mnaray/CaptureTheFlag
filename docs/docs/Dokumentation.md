@@ -32,20 +32,20 @@ Unter dem Proof-Of-Concept (PoC) verstehen wir eine Art "Dummyversion" des echte
 In der folgenden Tabelle sind die Anforderungen für das Projekt vorzufinden.
 
 
-| Nr. | Muss/Kann | funk./qual. | Beschreibung                                                                                                                                                                                                           |
-| ----- | ----------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | M         | funk.       | Es soll Docker für die Erstellung der Stufen / Barrieren verwendet werden.                                                                                                                                            |
-| 2   | M         | funk.       | Das PoC soll mindestens eine Flagge versteckt haben.                                                                                                                                                                   |
-| 3   | M         | funk.       | Falls mehr als eine Flagge versteckt ist, darf der Lösungsweg für diese keine Ähnlichkeiten zu anderen Lösungswegen aufweisen.                                                                                     |
-| 4   | M         | funk.       | Die Stufen / Barrieren müssen von mindestens einer Person in unserer Klasse oder einer Informatik-LP gelöst werden.                                                                                                  |
-| 5   | M         | funk.       | Damit klar ist was zu tun ist, muss eine Anleitung mit Anweisungen für das Spiel vorhanden sein.                                                                                                                      |
-| 6   | M         | qual.       | Die "Flags" müssen über das ganze Spiel hinweg im selben Format bleiben: flag{challenge_name}                                                                                                                        |
-| 7   | M         | funk.       | Es muss ein möglicher Lösungsweg zu jeder Challenge dokumentiert sein.                                                                                                                                               |
-| 8   | M         | funk.       | Die Stufen / Barrieren müssen im Zusammenhang mit dem IT-Bereich sein. Das heisst, die Lösung der Rätsel soll praktische Kenntnisse aus der Informatik voraussetzen und nicht "rätselhaft" oder "misteriös" sein. |
-| 9   | M         | funk.       | Das fertige Spiel muss bei einer öffentlichen Quelle zur Verfügung gestellt werden. (z.B. als Container- od. VM-Images)                                                                                              |
-| 10  | K         | qual.       | Es soll ein Regelwerk in der Anleitung für das Spiel vorhanden sein.                                                                                                                                                  |
-| 11  | K         | qual.       | Es sollen Hinweise als Hilfsmittel vorhanden sein. Diese dürfen jedoch nicht zu viel verraten.                                                                                                                        |
-| 12  | M         | qual.       | Es sollen Tips in der Anleitung vorhanden sein. Diese sollen den Spieler im Fall der Fälle auf den richtigen Pfad bringen.                                                                                            |
+| Nr. | Muss/Kann | funk./qual. | Beschreibung                                                                                                                                                                                                  |
+| ----- | ----------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | M         | funk.       | Es soll Docker für die Erstellung der Stufen / Barrieren verwendet werden.                                                                                                                                   |
+| 2   | M         | funk.       | Das PoC soll mindestens eine Flagge versteckt haben.                                                                                                                                                          |
+| 3   | M         | funk.       | Falls mehr als eine Flagge versteckt ist, darf der Lösungsweg für diese keine Ähnlichkeiten zu anderen Lösungswegen aufweisen.                                                                            |
+| 4   | M         | funk.       | Die Stufen / Barrieren müssen von mindestens einer Person in unserer Klasse oder einer Informatik-LP gelöst werden.                                                                                         |
+| 5   | M         | funk.       | Damit klar ist was zu tun ist, muss eine Anleitung mit Anweisungen für das Spiel vorhanden sein.                                                                                                             |
+| 6   | M         | qual.       | Die "Flags" müssen über das ganze Spiel hinweg im selben Format bleiben: flag{challenge_name}                                                                                                               |
+| 7   | M         | funk.       | Es muss ein möglicher Lösungsweg zu jeder Challenge dokumentiert sein.                                                                                                                                      |
+| 8   | M         | funk.       | Die Barrieren müssen im Zusammenhang mit dem IT-Bereich sein. Das heisst, die Lösung der Rätsel soll praktische Kenntnisse aus der Informatik voraussetzen und nicht "rätselhaft" oder "misteriös" sein. |
+| 9   | M         | funk.       | Das fertige Spiel muss bei einer öffentlichen Quelle zur Verfügung gestellt werden. (als Container)                                                                                                         |
+| 10  | K         | qual.       | Es soll ein Regelwerk in der Anleitung für das Spiel vorhanden sein.                                                                                                                                         |
+| 11  | K         | qual.       | Es sollen Hinweise als Hilfsmittel vorhanden sein. Diese dürfen jedoch nicht zu viel verraten.                                                                                                               |
+| 12  | M         | qual.       | Es sollen Tips in der Anleitung vorhanden sein. Diese sollen den Spieler im Fall der Fälle auf den richtigen Pfad bringen.                                                                                   |
 
 ### Technologien
 
@@ -65,6 +65,7 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 - [Docker](https://www.docker.com/)
 - [Docker Hub](https://hub.docker.com/)
+- [Docusaurus](https://docusaurus.io/docs)
 
 ## Planen
 
@@ -95,6 +96,32 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 :::
 
 ### Testfälle
+
+
+| Testf.<br />Nr. | Anf.<br />Nr. | Voraussetzung                                              | Testumgebung | Eingabe                                                                                                     | Erw. Ausgabe                                                                                                      |
+| :---------------- | --------------- | :----------------------------------------------------------- | -------------- | :------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| 1.1             | 1             | PoC ist vorhanden                                          | Docker       | Image von der Registry pullen und mit`docker run` starten. Als nächstes den Befehl `docker ps` ausführen. | Container erscheint in der ausgegebenen Liste.                                                                    |
+| 2.1             | 2             | PoC ist am Laufen                                          | Docker       | Mit der Lösung geht man durch das Spiel bis man fertig ist.                                                | Eine Flagge erscheint.                                                                                            |
+| 3.1             | 3             | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler öffnet die Unterseite Lösungen und durchschaut die Lösungen.                                 | Die Barrieren haben unterschiedliche Lösungswege                                                                 |
+| 4.1             | 4             | PoC ist am Laufen                                          | Docker       | Ohne Lösungen die Barrieren überwinden                                                                    | IT-Lehrperson oder Klassenkamerad hat die Flagge vor sich.                                                        |
+| 5.1             | 5             | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler öffnet die Unterseite mit der Anleitung und führt die Anweisungen darin aus.                  | Der Spieler ist startklar und weiss was er/sie zu tun hat.                                                        |
+| 6.1             | 6             | PoC ist am Laufen                                          | Docker       | Alle Flaggen finden.                                                                                        | Die Flaggen sind im Format: flag{challenge_name}                                                                  |
+| 7.1             | 7             | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler öffnet die Unterseite Lösungen und sieht sie sich an.                                         | Benutzer kann die Barriere überwinden.                                                                           |
+| 8.1             | 8             | PoC am Laufen                                              | Docker       | Der Spieler versucht mit Hilfe von Kenntnissen aus der Informatik die Barrieren zu überwinden.             | Der Spieler findet die Flaggen.                                                                                   |
+| 9.1             | 9             | Shell/Terminal ist offen                                   | Docker       | Der Spieler gibt den Befehl`docker pull <registry URL>` ein.                                                | Das Image wird gepullt.                                                                                           |
+| 10.1            | 10            | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler geht zur Unterseite der Anleitung und sieht sie sich an.                                        | Ein Regelwerk ist für den Spieler ersichtlich.                                                                   |
+| 11.1            | 11            | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler öffnet die Anleitung und liest sich die Hinweise durch.                                        | Mit den Hinweisen ist der Spieler in der Lage die Barriere zu überwinden, ohne dass er die Lösung erfahren hat. |
+| 12.1            | 12            | GH-Pages-Dokumentation ist offen und das PoC ist am Laufen | Chrome       | Der Spieler hat ein Problem mit dem Überwinden der Barriere und öffnet die Tips in der Dokumentation      | Der Spieler ist mit dem Tip in der Lage die Barriere zu überwinden, ohne die Lösung erfahren zu haben.          |
+
+#### Testumgebungen
+
+* Docker
+  * Version 20.10.23
+  * build 7155243
+* Chrome
+  * Version 110.0.5481.178 (Official Build) (64-bit)
+
+#TODO: Zusätzliche Testumgebungen müssen noch dokumentiert werden.
 
 ## Entscheiden
 
