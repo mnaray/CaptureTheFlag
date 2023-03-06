@@ -159,6 +159,38 @@ An sich ist es für uns kein Problem die Images öffentlich zu haben, da schon d
 
 Es könnte nerviger werden, immer alles auszuschreiben, jedoch würden wir meistens die images über eine CI-Pipeline in die Registry pushen. Schlussendlich macht dies das Problem irrelevant.
 
+### Barrieren
+
+Der Kern des Spiels besteht daraus, künstliche Barrieren zu überwinden. Für diese Barrieren haben wir ganz viele Ideen, jedoch können wir nur wenige in das PoC einbauen. Die restlichen Ideen könnten dann im echten Spiel verwendet werden.
+
+Hier ist eine Liste an Ideen:
+
+1. MD5 Hashing (z.B. mit Hashcat)
+2. Versteckte Directories
+3. Etwas Kompilieren
+4. Etwas Dekompilieren
+5. Python Scripts
+6. Bash Scripts
+7. Geheime Ports
+8. Subdomain enumeration
+9. Netzwerk-Mapping (z.B. mit NMAP)
+10. Abfangen von Packages (z.B. mit Wireshark)
+11. Verteilte Flaggen
+12. Bruteforcing (z.B. mit Hydra)
+13. Cross-Site-Scripting (z.B. mit Burpsuite)
+14. Umgebungsvariablen
+15. SQL-Injection
+
+Wir haben ein wenig diskutiert und uns für die folgenden entschieden:
+
+#### Barriere 1
+
+Diese Barriere haben wir gewählt, weil ...
+
+#### Barriere 2
+
+Das und das haben wir ausgewählt, da ...
+
 ## Realisieren
 
 ## Kontrollieren
