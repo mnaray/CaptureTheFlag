@@ -117,7 +117,7 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 * Docker
   * Version 20.10.23
-  * build 7155243
+  * Build 7155243
 * Chrome
   * Version 110.0.5481.178 (Official Build) (64-bit)
 
