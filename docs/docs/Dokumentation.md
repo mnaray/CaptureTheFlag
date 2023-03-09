@@ -2,7 +2,6 @@
 sidebar_position: 1
 title: Dokumentation
 ---
-
 :::note
 
 Dies ist die Dokumentation des ganzen Projekts. Sie wurde nach IPERKA umgesetzt. Es wird der Ablauf und die Vorgehensweise des ganzen Projekts dokumentiert.
@@ -73,7 +72,7 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 | Nr. | Frist      | Beschreibung                                                               | Geplante Zeit in Paketen |
 | ----- | ------------ | :--------------------------------------------------------------------------- | -------------------------- |
 | 1   | 24.02.2023 | Informieren (von IPERKA)                                                   | 20                       |
-| 2   | 10.03.2023 | Planen (von IPERKA)                                                        | 15                       |
+| 2   | 10.03.2023 | Planen und Entscheiden (von IPERKA)                                        | 15                       |
 | 3   | 10.03.2023 | Realisieren (von IPERKA): Konzept beschreiben                              | 4                        |
 | 4   | 17.03.2023 | Realisieren (von IPERKA): PoC erstellen                                    | 11                       |
 | 5   | 17.03.2023 | Realisieren (von IPERKA): Docker-Image erstellen & in eine Registry pushen | 2                        |
