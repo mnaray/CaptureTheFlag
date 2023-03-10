@@ -95,18 +95,18 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 ### Ausführung
 
 
-| Nr. | Frist      | Bemerkung | Zeit geplant | Zeit effektiv |
-| ----- | ------------ | ----------- | -------------- | --------------- |
-| 1   | 24.02.2023 |           | 20           |               |
-| 2   | 10.03.2023 |           | 15           |               |
-| 3   | 10.03.2023 |           | 4            |               |
-| 4   | 17.03.2023 |           | 11           |               |
-| 5   | 17.03.2023 |           | 2            |               |
-| 6   | 24.03.2023 |           | 2            |               |
-| 7   | 24.03.2023 |           | 2            |               |
-| 8   | 24.03.2023 |           | 6            |               |
+| Nr. | Frist      | Bemerkung                                                                                                                                                                                                    | Zeit geplant | Zeit effektiv |
+| ----- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | --------------- |
+| 1   | 24.02.2023 |                                                                                                                                                                                                              | 20           | 20            |
+| 2   | 10.03.2023 |                                                                                                                                                                                                              | 15           | 15            |
+| 3   | 10.03.2023 | Die Konzeptbeschreibung war viel schneller als gedacht, weil wir bei der Entscheidung schon vieles beschrieben haben. Wir mussten uns somit bei der Konzeptbeschreibung keine Gedanken mehr darüber machen. | 4            | 1             |
+| 4   | 17.03.2023 |                                                                                                                                                                                                              | 11           |               |
+| 5   | 17.03.2023 |                                                                                                                                                                                                              | 2            |               |
+| 6   | 24.03.2023 |                                                                                                                                                                                                              | 2            |               |
+| 7   | 24.03.2023 |                                                                                                                                                                                                              | 2            |               |
+| 8   | 24.03.2023 |                                                                                                                                                                                                              | 6            |               |
 
-Testfälle
+### Testfälle
 
 
 | Testf.<br />Nr. | Anf.<br />Nr. | Voraussetzung                                              | Testumgebung | Eingabe                                                                                                     | Erw. Ausgabe                                                                                                      |
@@ -204,6 +204,22 @@ Bruteforcing ist auch etwas, was man in Sachen Sicherheit beachten muss. Unsere 
 
 ## Realisieren
 
+### Konzeptbeschreibung
+
+Das Spiel soll verschiedene Barrieren beinhalten, welche es zu überwinden gilt, um die Flagge (das Ziel) zu erreichen. Wie man an die Flagge kommt ist dem Spieler überlassen, dieser soll einfach die Anleitung beachten und die gegebenen Regeln einhalten. Im Fall, dass der Spieler nicht mehr weiterkommt, kann er bei der entsprechenden Stelle in der Anleitung eine Dropdown-Section öffnen, um die dort notierten Hinweise oder Tips zu verwenden. Für den Fall, dass er gar nicht mehr weiterkommt, gibt es mögliche Lösungen auf einer separaten Seite.
+
+Um das Spiel zu beginnen, soll man den Anweisungen aus der Anleitung folgen können. Diese beinhalten folgende Sachen:
+
+* Was man alles schon installiert haben muss
+* Welche Images man von der Registry pullen muss
+* Wie man diese Images pullt
+* Wie man einen Container aus diesen Images startet
+* Bei jedem Level Startanweisungen
+* Bei jedem Level 2 bis 3 Hinweise
+
+Der Spieler soll mit diesen Informationen das Spiel vollständig durchspielen können. Als "durchgespielt" zählt, wenn er jede Flagge gefunden hat.
+
+Diese Flaggen müssen alle im folgenden Format sein: `flag{challenge_name}`
 
 ## Kontrollieren
 
