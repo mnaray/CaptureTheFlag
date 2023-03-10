@@ -63,6 +63,8 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 - [Docusaurus](https://docusaurus.io/docs)
 - [Hydra Dokumentation](https://www.kali.org/tools/hydra/)
 - [Legion Dokumentation](https://www.kali.org/tools/legion/)
+- [Verschlüsselung mit OpenSSL](https://stackoverflow.com/questions/16056135/how-to-use-openssl-to-encrypt-decrypt-files)
+- [Andere Methode für Verschlüsselung mit OpenSSL](https://stackoverflow.com/questions/33718005/how-to-encrypt-and-decrypt-a-string-text-in-shell-linux-environment)
 
 ## Planen
 
