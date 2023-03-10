@@ -94,7 +94,21 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 :::
 
-### Testfälle
+### Ausführung
+
+
+| Nr. | Frist      | Bemerkung | Zeit geplant | Zeit effektiv |
+| ----- | ------------ | ----------- | -------------- | --------------- |
+| 1   | 24.02.2023 |           | 20           |               |
+| 2   | 10.03.2023 |           | 15           |               |
+| 3   | 10.03.2023 |           | 4            |               |
+| 4   | 17.03.2023 |           | 11           |               |
+| 5   | 17.03.2023 |           | 2            |               |
+| 6   | 24.03.2023 |           | 2            |               |
+| 7   | 24.03.2023 |           | 2            |               |
+| 8   | 24.03.2023 |           | 6            |               |
+
+Testfälle
 
 
 | Testf.<br />Nr. | Anf.<br />Nr. | Voraussetzung                                              | Testumgebung | Eingabe                                                                                                     | Erw. Ausgabe                                                                                                      |
@@ -191,6 +205,7 @@ SQL-Injection haben wir vorallem deshalb gewählt, da es uns beide (Grupenmitgli
 Bruteforcing ist auch etwas, was man in Sachen Sicherheit beachten muss. Unsere Idee ist es, eine Flagge mit einem zufälligen 4-stelligen Pin zu verschlüsseln, damit diese noch innerhalb einer Lebenszeit erraten werden kann. Der Pin soll mit einer Burteforcing-Methode erraten werden, die Vorgehensweise dabei ist aber egal. Es können zum Beispiel eigene Scripts oder ein bestehendes Tool wie [Hydra](https://www.kali.org/tools/hydra/) oder [Legion](https://www.kali.org/tools/legion/) verwendet werden.
 
 ## Realisieren
+
 
 ## Kontrollieren
 
