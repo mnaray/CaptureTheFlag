@@ -95,16 +95,16 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 ### Ausführung
 
 
-| Nr. | Frist      | Bemerkung | Zeit geplant | Zeit effektiv |
-| ----- | ------------ | ----------- | -------------- | --------------- |
-| 1   | 24.02.2023 |           | 20           |               |
-| 2   | 10.03.2023 |           | 15           |               |
-| 3   | 10.03.2023 |           | 4            |               |
-| 4   | 17.03.2023 |           | 11           |               |
-| 5   | 17.03.2023 |           | 2            |               |
-| 6   | 24.03.2023 |           | 2            |               |
-| 7   | 24.03.2023 |           | 2            |               |
-| 8   | 24.03.2023 |           | 6            |               |
+| Nr. | Frist      | Bemerkung                                                                                                                                                                                                    | Zeit geplant | Zeit effektiv |
+| ----- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | --------------- |
+| 1   | 24.02.2023 |                                                                                                                                                                                                              | 20           | 20            |
+| 2   | 10.03.2023 |                                                                                                                                                                                                              | 15           | 15            |
+| 3   | 10.03.2023 | Die Konzeptbeschreibung war viel schneller als gedacht, weil wir bei der Entscheidung schon vieles beschrieben haben. Wir mussten uns somit bei der Konzeptbeschreibung keine Gedanken mehr darüber machen. | 4            | 1             |
+| 4   | 17.03.2023 |                                                                                                                                                                                                              | 11           |               |
+| 5   | 17.03.2023 |                                                                                                                                                                                                              | 2            |               |
+| 6   | 24.03.2023 |                                                                                                                                                                                                              | 2            |               |
+| 7   | 24.03.2023 |                                                                                                                                                                                                              | 2            |               |
+| 8   | 24.03.2023 |                                                                                                                                                                                                              | 6            |               |
 
 ### Testfälle
 
