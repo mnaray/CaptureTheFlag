@@ -65,6 +65,8 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 - [Legion Dokumentation](https://www.kali.org/tools/legion/)
 - [Verschlüsselung mit OpenSSL](https://stackoverflow.com/questions/16056135/how-to-use-openssl-to-encrypt-decrypt-files)
 - [Andere Methode für Verschlüsselung mit OpenSSL](https://stackoverflow.com/questions/33718005/how-to-encrypt-and-decrypt-a-string-text-in-shell-linux-environment)
+- [For-Schleifen in Bash](https://www.cyberciti.biz/faq/bash-for-loop/)
+- [Try-Catch Fehlerbehandlung in Bash](https://stackoverflow.com/questions/22009364/is-there-a-try-catch-command-in-bash)
 
 ## Planen
 
