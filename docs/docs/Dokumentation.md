@@ -1,10 +1,7 @@
-``
---
-
+---
 sidebar_position: 1
 title: Dokumentation
---------------------
-
+---
 :::note
 
 Dies ist die Dokumentation des ganzen Projekts. Sie wurde nach IPERKA umgesetzt. Es wird der Ablauf und die Vorgehensweise des ganzen Projekts dokumentiert.
@@ -66,6 +63,8 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 - [Docker](https://www.docker.com/)
 - [Docker Hub](https://hub.docker.com/)
 - [Docusaurus](https://docusaurus.io/docs)
+- [Hydra Dokumentation](https://www.kali.org/tools/hydra/)
+- [Legion Dokumentation](https://www.kali.org/tools/legion/)
 
 ## Planen
 
@@ -75,7 +74,7 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 | Nr. | Frist      | Beschreibung                                                               | Geplante Zeit in Paketen |
 | ----- | ------------ | :--------------------------------------------------------------------------- | -------------------------- |
 | 1   | 24.02.2023 | Informieren (von IPERKA)                                                   | 20                       |
-| 2   | 10.03.2023 | Planen (von IPERKA)                                                        | 15                       |
+| 2   | 10.03.2023 | Planen und Entscheiden (von IPERKA)                                        | 15                       |
 | 3   | 10.03.2023 | Realisieren (von IPERKA): Konzept beschreiben                              | 4                        |
 | 4   | 17.03.2023 | Realisieren (von IPERKA): PoC erstellen                                    | 11                       |
 | 5   | 17.03.2023 | Realisieren (von IPERKA): Docker-Image erstellen & in eine Registry pushen | 2                        |
@@ -117,7 +116,7 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 
 * Docker
   * Version 20.10.23
-  * build 7155243
+  * Build 7155243
 * Chrome
   * Version 110.0.5481.178 (Official Build) (64-bit)
 
@@ -158,6 +157,38 @@ Der hauptsächlichen Unterschiede liegen in diesen Punkten: die Möglichkeit pri
 An sich ist es für uns kein Problem die Images öffentlich zu haben, da schon die Repository öffentlich ist. Das einzige Problem, das wir haben könnten, ist die um einiges längere URL zur Registry. Bei Docker-Hub kann man die domain einfach weg lassen und nur mit dem Imagenamen arbeiten, jedoch muss man bei github immer die ganze Domain ausschreiben.
 
 Es könnte nerviger werden, immer alles auszuschreiben, jedoch würden wir meistens die images über eine CI-Pipeline in die Registry pushen. Schlussendlich macht dies das Problem irrelevant.
+
+### Barrieren
+
+Der Kern des Spiels besteht daraus, künstliche Barrieren zu überwinden. Für diese Barrieren haben wir ganz viele Ideen, jedoch können wir nur wenige in das PoC einbauen. Die restlichen Ideen könnten dann im echten Spiel verwendet werden.
+
+Hier ist eine Liste an Ideen:
+
+1. MD5 Hashing (z.B. mit Hashcat)
+2. Versteckte Directories
+3. Etwas Kompilieren
+4. Etwas Dekompilieren
+5. **Python Scripts**
+6. **Bash Scripts**
+7. Geheime Ports
+8. Subdomain enumeration
+9. Netzwerk-Mapping (z.B. mit NMAP)
+10. Abfangen von Packages (z.B. mit Wireshark)
+11. Verteilte Flaggen
+12. **Bruteforcing (z.B. mit Hydra)**
+13. Cross-Site-Scripting (z.B. mit Burpsuite)
+14. Umgebungsvariablen
+15. **SQL-Injection**
+
+Wir haben ein wenig diskutiert und uns für die folgenden entschieden:
+
+#### Barriere 1: SQL-Injection
+
+SQL-Injection haben wir vorallem deshalb gewählt, da es uns beide (Grupenmitglieder) interessiert. Es ist etwas, auf das man bei der Entwicklung von Software achten muss, denn wenn es jemand kann, dann kann diese Person sehr vieles mit der Datenbank anstellen. Die Idee ist es, ein Netzwerk mit Docker-Compose zu erstellen. Dieses soll einen Container mit einer Datenbank und eine Node-Laufzeit mit einer einfachen Webseite haben. Das Ziel: Der Spieler soll sich als administrator einloggen können, indem er SQL in die Loginfelder einfügt.
+
+#### Barriere 2: Bruteforcing mit eigenen Scripts oder einem Tool
+
+Bruteforcing ist auch etwas, was man in Sachen Sicherheit beachten muss. Unsere Idee ist es, eine Flagge mit einem zufälligen 4-stelligen Pin zu verschlüsseln, damit diese noch innerhalb einer Lebenszeit erraten werden kann. Der Pin soll mit einer Burteforcing-Methode erraten werden, die Vorgehensweise dabei ist aber egal. Es können zum Beispiel eigene Scripts oder ein bestehendes Tool wie [Hydra](https://www.kali.org/tools/hydra/) oder [Legion](https://www.kali.org/tools/legion/) verwendet werden.
 
 ## Realisieren
 
