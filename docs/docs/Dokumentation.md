@@ -63,6 +63,8 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 - [Docker](https://www.docker.com/)
 - [Docker Hub](https://hub.docker.com/)
 - [Docusaurus](https://docusaurus.io/docs)
+- [Hydra Dokumentation](https://www.kali.org/tools/hydra/)
+- [Legion Dokumentation](https://www.kali.org/tools/legion/)
 
 ## Planen
 
@@ -166,27 +168,27 @@ Hier ist eine Liste an Ideen:
 2. Versteckte Directories
 3. Etwas Kompilieren
 4. Etwas Dekompilieren
-5. Python Scripts
-6. Bash Scripts
+5. **Python Scripts**
+6. **Bash Scripts**
 7. Geheime Ports
 8. Subdomain enumeration
 9. Netzwerk-Mapping (z.B. mit NMAP)
 10. Abfangen von Packages (z.B. mit Wireshark)
 11. Verteilte Flaggen
-12. Bruteforcing (z.B. mit Hydra)
+12. **Bruteforcing (z.B. mit Hydra)**
 13. Cross-Site-Scripting (z.B. mit Burpsuite)
 14. Umgebungsvariablen
-15. SQL-Injection
+15. **SQL-Injection**
 
 Wir haben ein wenig diskutiert und uns für die folgenden entschieden:
 
-#### Barriere 1
+#### Barriere 1: SQL-Injection
 
-Diese Barriere haben wir gewählt, weil ...
+SQL-Injection haben wir vorallem deshalb gewählt, da es uns beide (Grupenmitglieder) interessiert. Es ist etwas, auf das man bei der Entwicklung von Software achten muss, denn wenn es jemand kann, dann kann diese Person sehr vieles mit der Datenbank anstellen. Die Idee ist es, ein Netzwerk mit Docker-Compose zu erstellen. Dieses soll einen Container mit einer Datenbank und eine Node-Laufzeit mit einer einfachen Webseite haben. Das Ziel: Der Spieler soll sich als administrator einloggen können, indem er SQL in die Loginfelder einfügt.
 
-#### Barriere 2
+#### Barriere 2: Bruteforcing mit eigenen Scripts oder einem Tool
 
-Das und das haben wir ausgewählt, da ...
+Bruteforcing ist auch etwas, was man in Sachen Sicherheit beachten muss. Unsere Idee ist es, eine Flagge mit einem zufälligen 4-stelligen Pin zu verschlüsseln, damit diese noch innerhalb einer Lebenszeit erraten werden kann. Der Pin soll mit einer Burteforcing-Methode erraten werden, die Vorgehensweise dabei ist aber egal. Es können zum Beispiel eigene Scripts oder ein bestehendes Tool wie [Hydra](https://www.kali.org/tools/hydra/) oder [Legion](https://www.kali.org/tools/legion/) verwendet werden.
 
 ## Realisieren
 
