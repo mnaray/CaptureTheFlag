@@ -1,1 +1,1 @@
-FROM linux:latest 
+FROM alpine:latest 
