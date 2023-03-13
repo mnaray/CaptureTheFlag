@@ -18,7 +18,7 @@ Um an die Flagge heranzukommen, muss ein vierstelliger Code geknackt werden. Dei
 
 <details><summary>1. Hinweis</summary>
 <p>
-Schau auf den Namen dieser Ausgabenstellung. Was ist der Titel? Google was es bedeutet. 
+Schau auf den Namen dieser Aufgabenstellung. Was ist der Titel? Google was es bedeutet. 
 </p>
 </details>
 
