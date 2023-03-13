@@ -11,8 +11,8 @@ Title: Anleitungen
 
 ### Aufgabenstellung
 
-Das Ziel ist, die Flagge zu finden. Diese ist in diesem Format: flag{bruteforce_challenge}
-Um an die Flagge heranzukommen, muss ein vierstelliger Code geknackt werden. Deine Aufgabe ist es diesen Code zu knacken.
+Das Ziel ist, die Flagge zu finden. Diese sieht so aus: flag{bruteforce_challenge}
+Um an die Flagge heranzukommen, muss ein vierstelliger Code geknackt werden. Deine Aufgabe ist es dies zu tun.
 
 ### Hilfestellungen
 
