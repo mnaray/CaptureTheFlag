@@ -25,11 +25,15 @@ Schau auf den Namen dieser Aufgabenstellung. Was ist der Titel? Google was es be
 <details><summary>2. Hinweis</summary>
 <p>
 Am schnellsten geht es ein Programm oder Script zu schreiben, welches die Arbeit vom Codeknacken für dich übernimmt. 
+Dabei kannst du die Programmiersprache und die Entwicklungsumgebung frei wählen. 
+Folgende Suchbegriffe können dir dabei behilflich sein:
+- 
 </p>
 </details>
 
 <details><summary>3. Hinweis</summary>
 <p>
-
+Benutze Hashcat, um den Code zu knacken. Das ist ein sehr gutes und schnelles "hacking-" Tool, welches dir behilflich sein wird. 
+[Hashcat Download](https://hashcat.net/hashcat/)
 </p>
 </details>
