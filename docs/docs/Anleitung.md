@@ -140,10 +140,3 @@ Folgende Suchbegriffe können dir dabei behilflich sein:
 - 
 </p>
 </details>
-
-<details><summary>3. Hinweis</summary>
-<p>
-Benutze Hashcat, um den Code zu knacken. Das ist ein sehr gutes und schnelles "hacking-" Tool, welches dir behilflich sein wird. 
-[Hashcat Download](https://hashcat.net/hashcat/)
-</p>
-</details>
