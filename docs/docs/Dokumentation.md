@@ -72,16 +72,16 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 ### Arbeitspakete
 
 
-| Nr. | Frist      | Beschreibung                                                               | Geplante Zeit in Paketen |
-| ----- | ------------ | :--------------------------------------------------------------------------- | -------------------------- |
-| 1   | 24.02.2023 | Informieren (von IPERKA)                                                   | 20                       |
-| 2   | 10.03.2023 | Planen und Entscheiden (von IPERKA)                                        | 15                       |
-| 3   | 10.03.2023 | Realisieren (von IPERKA): Konzept beschreiben                              | 4                        |
-| 4   | 17.03.2023 | Realisieren (von IPERKA): PoC erstellen                                    | 11                       |
-| 5   | 17.03.2023 | Realisieren (von IPERKA): Docker-Image erstellen & in eine Registry pushen | 2                        |
-| 6   | 24.03.2023 | Kontrollieren (von IPERKA)                                                 | 2                        |
-| 7   | 24.03.2023 | Auswerten (von IPERKA)                                                     | 2                        |
-| 8   | 24.03.2023 | Portfolioeintrag bis am Abend                                              | 6 (ggf. mehr)            |
+| Nr. | Frist      | Beschreibung                                                                | Geplante Zeit in Paketen |
+| ----- | ------------ | :---------------------------------------------------------------------------- | -------------------------- |
+| 1   | 24.02.2023 | Informieren (von IPERKA)                                                    | 20                       |
+| 2   | 10.03.2023 | Planen und Entscheiden (von IPERKA)                                         | 15                       |
+| 3   | 10.03.2023 | Realisieren (von IPERKA): Konzept beschreiben                               | 4                        |
+| 4   | 17.03.2023 | Realisieren (von IPERKA): PoC erstellen                                     | 11                       |
+| 5   | 17.03.2023 | Realisieren (von IPERKA): Docker-Images erstellen & in eine Registry pushen | 2                        |
+| 6   | 24.03.2023 | Kontrollieren (von IPERKA)                                                  | 2                        |
+| 7   | 24.03.2023 | Auswerten (von IPERKA)                                                      | 2                        |
+| 8   | 24.03.2023 | Portfolioeintrag bis am Abend                                               | 6 (ggf. mehr)            |
 
 :::info
 
