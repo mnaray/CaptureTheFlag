@@ -63,22 +63,25 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 - [Docusaurus](https://docusaurus.io/docs)
 - [Hydra Dokumentation](https://www.kali.org/tools/hydra/)
 - [Legion Dokumentation](https://www.kali.org/tools/legion/)
+- [Verschlüsselung mit OpenSSL](https://stackoverflow.com/questions/16056135/how-to-use-openssl-to-encrypt-decrypt-files)
+- [Andere Methode für Verschlüsselung mit OpenSSL](https://stackoverflow.com/questions/33718005/how-to-encrypt-and-decrypt-a-string-text-in-shell-linux-environment)
+- [For-Schleifen in Bash](https://www.cyberciti.biz/faq/bash-for-loop/)
 
 ## Planen
 
 ### Arbeitspakete
 
 
-| Nr. | Frist      | Beschreibung                                                               | Geplante Zeit in Paketen |
-| ----- | ------------ | :--------------------------------------------------------------------------- | -------------------------- |
-| 1   | 24.02.2023 | Informieren (von IPERKA)                                                   | 20                       |
-| 2   | 10.03.2023 | Planen und Entscheiden (von IPERKA)                                        | 15                       |
-| 3   | 10.03.2023 | Realisieren (von IPERKA): Konzept beschreiben                              | 4                        |
-| 4   | 17.03.2023 | Realisieren (von IPERKA): PoC erstellen                                    | 11                       |
-| 5   | 17.03.2023 | Realisieren (von IPERKA): Docker-Image erstellen & in eine Registry pushen | 2                        |
-| 6   | 24.03.2023 | Kontrollieren (von IPERKA)                                                 | 2                        |
-| 7   | 24.03.2023 | Auswerten (von IPERKA)                                                     | 2                        |
-| 8   | 24.03.2023 | Portfolioeintrag bis am Abend                                              | 6 (ggf. mehr)            |
+| Nr. | Frist      | Beschreibung                                                                | Geplante Zeit in Paketen |
+| ----- | ------------ | :---------------------------------------------------------------------------- | -------------------------- |
+| 1   | 24.02.2023 | Informieren (von IPERKA)                                                    | 20                       |
+| 2   | 10.03.2023 | Planen und Entscheiden (von IPERKA)                                         | 15                       |
+| 3   | 10.03.2023 | Realisieren (von IPERKA): Konzept beschreiben                               | 4                        |
+| 4   | 17.03.2023 | Realisieren (von IPERKA): PoC erstellen (Programmieren)                     | 11                       |
+| 5   | 17.03.2023 | Realisieren (von IPERKA): Docker-Images erstellen & in eine Registry pushen | 2                        |
+| 6   | 24.03.2023 | Kontrollieren (von IPERKA)                                                  | 2                        |
+| 7   | 24.03.2023 | Auswerten (von IPERKA)                                                      | 2                        |
+| 8   | 24.03.2023 | Portfolioeintrag bis am Abend                                               | 6 (ggf. mehr)            |
 
 :::info
 
@@ -100,7 +103,7 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 | 1   | 24.02.2023 |                                                                                                                                                                                                              | 20           | 20            |
 | 2   | 10.03.2023 |                                                                                                                                                                                                              | 15           | 15            |
 | 3   | 10.03.2023 | Die Konzeptbeschreibung war viel schneller als gedacht, weil wir bei der Entscheidung schon vieles beschrieben haben. Wir mussten uns somit bei der Konzeptbeschreibung keine Gedanken mehr darüber machen. | 4            | 1             |
-| 4   | 17.03.2023 |                                                                                                                                                                                                              | 11           |               |
+| 4   | 17.03.2023 | Hier ist das Programmieren des Bruteforce-Containers sehr schnell gegangen. Wir haben den Schwierigkeitsgrad von dem etwas überschätzt.                                                                    | 11           |               |
 | 5   | 17.03.2023 |                                                                                                                                                                                                              | 2            |               |
 | 6   | 24.03.2023 |                                                                                                                                                                                                              | 2            |               |
 | 7   | 24.03.2023 |                                                                                                                                                                                                              | 2            |               |

@@ -1,0 +1,5 @@
+Dockerfile
+.dockerignore
+solution.sh
+out.txt
+flag.txt.enc
