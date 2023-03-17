@@ -6,7 +6,7 @@ services:
     container_name: usersdb
     restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD=qeoü0SDF!'9uqevlnkq34ü09u324qokf%nqwwüout3049u309uöf_l3wkmÖLKJEDFfljadöfklnwq$ef
+      - MYSQL_ROOT_PASSWORD=password
     ports:
       - "3306:3306"
     volumes:
