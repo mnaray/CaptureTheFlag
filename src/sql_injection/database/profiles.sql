@@ -7,7 +7,8 @@ CREATE TABLE users(
     PRIMARY KEY (user_id)
 );
 
-INSERT INTO users (username, password)
-VALUES ("Günter", "fjkafnj")
-VALUES ("Florian", "hjihvbuw")
-VALUES ("Beniamin", "blümchen")
+INSERT INTO users (username, password) 
+VALUES
+    ("admin", "fjkafnj"),
+    ("Florian", "hjihvbuw"),
+    ("Beniamin", "blümchen");
