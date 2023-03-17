@@ -122,28 +122,43 @@ For more examples and ideas, visit:
 ### Aufgabenstellung
 
 Das Ziel ist, die Flagge zu finden. Diese sieht so aus: flag{bruteforce_challenge}
-Um an die Flagge heranzukommen, muss ein Code zwischen 0 und 9999 geknackt werden. Deine Aufgabe ist es dies zu tun. 
-ssl
+Um an die Flagge heranzukommen, muss ein Pin zwischen 0 und 9999 gefunden werden. Deine Aufgabe ist es dies zu tun, indem du eine Bruteforce-Methode anwendest.
+
+Das Level ist überwunden, wenn folgende Flagge gefunden wurde:  
+`flag{bruteforce_challenge}`
+
+Zusätzliche Informationen:
+- Es wurde **OpenSSL** zum Verschlüsseln der Flagge verwendet.
+- **aes-256-cbc** wurde als Methode genommen.
+- Der Pin muss nicht unbedingt vierstellig sein.
+- Das zu entschlüsselnde File befindet sich im Filesystem des Containers unter */home/root*
+- Es wird **nicht** BASH im Container verwendet, sondern die **Alpine Shell**.
+
+Um zu starten:
+
+```bash
+docker run -it --name ash mnaray/bruteforce:latest
+```
 
 ### Hilfestellungen
 
 <details><summary>1. Hinweis</summary>
 <p>
-
+Bei der Verwendung vom openssl-Befehl ist zu beachten, dass die Ver- und Entschlüsselung auf einer binären Ebene geschieht. Damit du das Resultat dann auch lesen kannst, muss <code>-a</code> im Befehl verwendet werden. Dies en(t)kodiert die Ausgabe zu Base-64.
 </p>
 </details>
 
 <details><summary>2. Hinweis</summary>
 <p>
-Schau auf den Namen dieser Aufgabenstellung. Was ist der Titel? Google was es bedeutet. 
+Schau auf den Namen dieser Aufgabenstellung. Was ist der Titel? Google was es ist. Vergiss nicht, dass der geheime Pin sich zwischen 0 und 9999 befindet.
 </p>
 </details>
 
 <details><summary>3. Hinweis</summary>
 <p>
-Am schnellsten geht es ein Programm oder Script zu schreiben, welches die Arbeit vom Codeknacken für dich übernimmt. 
-Dabei kannst du die Programmiersprache und die Entwicklungsumgebung frei wählen. 
-Folgende Suchbegriffe können dir dabei behilflich sein:
-- 
+Am schnellsten geht es, ein Script zu schreiben, welches die Arbeit vom Ausprobieren aller Optionen für dich übernimmt. Es muss aber nicht unbedingt ein Script sein, es gibt sonst auch noch viele Bibliotheken und Tools, mit denen so etwas gemacht werden kann.
+</p>
+<p>
+Hier ist es einfacher ein kurzes Script zu schreiben, da es nur 10000 mögliche Kombinationen für den Code gibt. In einer Situation, in der es vielleicht sogar milliarden von Optionen gibt, ist z.B. ein Bruteforcing-Tool empfehlenswert.
 </p>
 </details>
