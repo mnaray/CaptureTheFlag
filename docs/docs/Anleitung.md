@@ -122,17 +122,24 @@ For more examples and ideas, visit:
 ### Aufgabenstellung
 
 Das Ziel ist, die Flagge zu finden. Diese sieht so aus: flag{bruteforce_challenge}
-Um an die Flagge heranzukommen, muss ein vierstelliger Code geknackt werden. Deine Aufgabe ist es dies zu tun.
+Um an die Flagge heranzukommen, muss ein Code zwischen 0 und 9999 geknackt werden. Deine Aufgabe ist es dies zu tun. 
+ssl
 
 ### Hilfestellungen
 
 <details><summary>1. Hinweis</summary>
 <p>
-Schau auf den Namen dieser Aufgabenstellung. Was ist der Titel? Google was es bedeutet. 
+
 </p>
 </details>
 
 <details><summary>2. Hinweis</summary>
+<p>
+Schau auf den Namen dieser Aufgabenstellung. Was ist der Titel? Google was es bedeutet. 
+</p>
+</details>
+
+<details><summary>3. Hinweis</summary>
 <p>
 Am schnellsten geht es ein Programm oder Script zu schreiben, welches die Arbeit vom Codeknacken für dich übernimmt. 
 Dabei kannst du die Programmiersprache und die Entwicklungsumgebung frei wählen. 
