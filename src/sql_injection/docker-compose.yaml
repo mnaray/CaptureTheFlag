@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  database:
+    image: mysql:latest
+    container_name: usersdb
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./database/profiles.sql:/var/sql/profiles.sql # SQL-Script
+
+  # webserver:
+  #   image: node:latest
+  #   container_name: loginpage
+  #   restart: always
+  #   ports:
+  #     - "3000:80"

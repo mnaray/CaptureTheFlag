@@ -162,3 +162,57 @@ Am schnellsten geht es, ein Script zu schreiben, welches die Arbeit vom Ausprobi
 Hier ist es einfacher ein kurzes Script zu schreiben, da es nur 10000 mögliche Kombinationen für den Code gibt. In einer Situation, in der es vielleicht sogar milliarden von Optionen gibt, ist z.B. ein Bruteforcing-Tool empfehlenswert.
 </p>
 </details>
+
+## SQL-Injection
+
+### Aufgabenstellung
+
+Das Ziel ist, die Flagge zu finden. Diese sieht so aus: flag{sql_injection_challenge}
+Um an die Flagge heranzukommen muss das Login via einer SQL-Injection umgangen werden.
+
+Das Level ist überwunden, wenn folgende Flagge gefunden wurde:
+`flag{sql_injection_challenge}`
+
+Zusätzliche Informationen:
+- Es darf nicht mit einer direkten auf die Datenbank zugegriffen werden.
+- Du sollst dich als "admin" einloggen.
+- Das Passwort soll nicht geraten werden. Es gilt das Login zu umgehen.
+- Es laufen zwei Container in einem Netzwerk; die Datenbank und die Node-Laufzeit (Webserver)
+- Die Container müssen mit `docker-compose` gestartet werden.
+
+Um zu starten:
+
+Erstelle eine Datei mit dem Namen `docker-compose.yaml`.  
+In diese Datei sollst du folgenden Inhalt einfügen:
+
+```yml
+docker-compose inhalt hier einfügen!
+```
+
+Sobald du den Inhalt eingefügt hast, navigiere mit der Kommandozeile an den Ort der Datei.  
+Dort sollst du folgenden Befehl ausführen:
+
+```bash
+docker-compose up -d
+```
+
+Es kann ein wenig dauern bis alles ausgeführt wurde, wenn du die Dockerimages noch nicht auf deinem Gerät hast. Das ist nicht schlimm, es wird alles automatisch heruntergeladen und installiert, wenn der Inhalt von der docker-compose-Datei stimmt.
+
+Wenn alles hochgefahren ist, kannst du nun einen beliebigen Browser öffnen und `http://localhost` als URL eingeben. Es soll sich eine schlichte Loginseite öffnen, welche der Startpunkt der Challenge ist.
+
+### Hilfestellungen
+
+<details><summary>1. Hinweis</summary>
+<p>
+</p>
+</details>
+
+<details><summary>2. Hinweis</summary>
+<p>
+</p>
+</details>
+
+<details><summary>3. Hinweis</summary>
+<p>
+</p>
+</details>
