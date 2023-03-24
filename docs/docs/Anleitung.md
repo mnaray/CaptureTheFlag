@@ -204,15 +204,21 @@ Wenn alles hochgefahren ist, kannst du nun einen beliebigen Browser öffnen und 
 
 <details><summary>1. Hinweis</summary>
 <p>
+Weisst du was SQL-Injection ist? Falls nicht, dann sollst du dich kurz informieren und versuchen die gefundenen Informationen im nächsten Schritt anzuwenden.
+</p>
+<p>
+Schreibe dir eine Query auf, die möglicherweise verwendet wird, um die Datenbank nach den Logindaten abzufragen. Wie kannst du nun diese Query mit (zum Beispiel) den Eingabefeldern manipulieren?
 </p>
 </details>
 
 <details><summary>2. Hinweis</summary>
 <p>
+Wie kommentiert man etwas in SQL aus? Versuche den Rest der ursprünglichen Query ungültig zu machen, indem du ihn auskommentierst.
 </p>
 </details>
 
 <details><summary>3. Hinweis</summary>
 <p>
+Die eigentliche Injection findet im Passwortfeld statt. Der Nutzername soll "admin" sein.
 </p>
 </details>
