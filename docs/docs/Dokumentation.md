@@ -135,8 +135,6 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 * Chrome
   * Version 110.0.5481.178 (Official Build) (64-bit)
 
-#TODO: Zusätzliche Testumgebungen müssen noch dokumentiert werden.
-
 ## Entscheiden
 
 ### Docker oder VM?
