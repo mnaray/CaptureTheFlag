@@ -13,6 +13,8 @@ function myFunction() {
 
     const username = "admin"; // user input
     const password = "password"; // user input
+    // select username, password from users where username = "admin" having password = "fjka" or "1"="1";
+    // SELECT username, password FROM users WHERE username = ${username} HAVING password = ${password} OR "1"="1";
     const queryString = `SELECT username, password FROM users WHERE username = ${username} HAVING password = ${password}`;
 
     con.connect(function (err) {
