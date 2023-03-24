@@ -1,7 +1,7 @@
----
 sidebar_position: 1
 title: Dokumentation
----
+--------------------
+
 :::note
 
 Dies ist die Dokumentation des ganzen Projekts. Sie wurde nach IPERKA umgesetzt. Es wird der Ablauf und die Vorgehensweise des ganzen Projekts dokumentiert.
@@ -104,11 +104,11 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 | 1   | 24.02.2023 |                                                                                                                                                                                                              | 20           | 20            |
 | 2   | 10.03.2023 |                                                                                                                                                                                                              | 15           | 15            |
 | 3   | 10.03.2023 | Die Konzeptbeschreibung war viel schneller als gedacht, weil wir bei der Entscheidung schon vieles beschrieben haben. Wir mussten uns somit bei der Konzeptbeschreibung keine Gedanken mehr darüber machen. | 4            | 1             |
-| 4   | 17.03.2023 | Hier ist das Programmieren des Bruteforce-Containers sehr schnell gegangen. Wir haben den Schwierigkeitsgrad von dem etwas überschätzt.                                                                    | 11           |               |
-| 5   | 17.03.2023 |                                                                                                                                                                                                              | 2            |               |
-| 6   | 24.03.2023 |                                                                                                                                                                                                              | 2            |               |
-| 7   | 24.03.2023 |                                                                                                                                                                                                              | 2            |               |
-| 8   | 24.03.2023 |                                                                                                                                                                                                              | 6            |               |
+| 4   | 17.03.2023 | Hier ist das Programmieren des Bruteforce-Containers sehr schnell gegangen. Wir haben den Schwierigkeitsgrad von dem etwas überschätzt.                                                                    | 11           | 8             |
+| 5   | 17.03.2023 |                                                                                                                                                                                                              | 2            | 5             |
+| 6   | 24.03.2023 |                                                                                                                                                                                                              | 2            | 2             |
+| 7   | 24.03.2023 |                                                                                                                                                                                                              | 2            | 2             |
+| 8   | 24.03.2023 |                                                                                                                                                                                                              | 6            | 6             |
 
 ### Testfälle
 
@@ -117,7 +117,7 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 | :---------------- | --------------- | :----------------------------------------------------------- | -------------- | :------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
 | 1.1             | 1             | PoC ist vorhanden                                          | Docker       | Image von der Registry pullen und mit`docker run` starten. Als nächstes den Befehl `docker ps` ausführen. | Container erscheint in der ausgegebenen Liste.                                                                    |
 | 2.1             | 2             | PoC ist am Laufen                                          | Docker       | Mit der Lösung geht man durch das Spiel bis man fertig ist.                                                | Eine Flagge erscheint.                                                                                            |
-| 3.1             | 3             | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler öffnet die Unterseite Lösungen und durchschaut die Lösungen.                                 | Die Barrieren haben unterschiedliche Lösungswege                                                                 |
+| 3.1             | 3             | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler öffnet die Unterseite Lösungen und sieht sie sich an.                                         | Die Barrieren haben unterschiedliche Lösungswege                                                                 |
 | 4.1             | 4             | PoC ist am Laufen                                          | Docker       | Ohne Lösungen die Barrieren überwinden                                                                    | IT-Lehrperson oder Klassenkamerad hat die Flagge vor sich.                                                        |
 | 5.1             | 5             | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler öffnet die Unterseite mit der Anleitung und führt die Anweisungen darin aus.                  | Der Spieler ist startklar und weiss was er/sie zu tun hat.                                                        |
 | 6.1             | 6             | PoC ist am Laufen                                          | Docker       | Alle Flaggen finden.                                                                                        | Die Flaggen sind im Format: flag{challenge_name}                                                                  |
@@ -125,8 +125,7 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 | 8.1             | 8             | PoC am Laufen                                              | Docker       | Der Spieler versucht mit Hilfe von Kenntnissen aus der Informatik die Barrieren zu überwinden.             | Der Spieler findet die Flaggen.                                                                                   |
 | 9.1             | 9             | Shell/Terminal ist offen                                   | Docker       | Der Spieler gibt den Befehl`docker pull <registry URL>` ein.                                                | Das Image wird gepullt.                                                                                           |
 | 10.1            | 10            | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler geht zur Unterseite der Anleitung und sieht sie sich an.                                        | Ein Regelwerk ist für den Spieler ersichtlich.                                                                   |
-| 11.1            | 11            | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler öffnet die Anleitung und liest sich die Hinweise durch.                                        | Mit den Hinweisen ist der Spieler in der Lage die Barriere zu überwinden, ohne dass er die Lösung erfahren hat. |
-| 12.1            | 12            | GH-Pages-Dokumentation ist offen und das PoC ist am Laufen | Chrome       | Der Spieler hat ein Problem mit dem Überwinden der Barriere und öffnet die Tips in der Dokumentation      | Der Spieler ist mit dem Tip in der Lage die Barriere zu überwinden, ohne die Lösung erfahren zu haben.          |
+| 11.1            | 11            | GH-Pages-Dokumentation ist offen und das PoC ist am Laufen | Chrome       | Der Spieler öffnet die Anleitung und liest sich die Hinweise durch.                                        | Mit den Hinweisen ist der Spieler in der Lage die Barriere zu überwinden, ohne dass er die Lösung erfahren hat. |
 
 #### Testumgebungen
 
@@ -227,4 +226,27 @@ Diese Flaggen müssen alle im folgenden Format sein: `flag{challenge_name}`
 
 ## Kontrollieren
 
+
+| Testf.<br />Nr. | Anf.<br />Nr. | Voraussetzung                                              | Testumgebung | Eingabe                                                                                                     | Erw. Ausgabe                                                                                                      | Ergebnis |
+| :---------------- | --------------- | :----------------------------------------------------------- | -------------- | :------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | ---------- |
+| 1.1             | 1             | PoC ist vorhanden                                          | Docker       | Image von der Registry pullen und mit`docker run` starten. Als nächstes den Befehl `docker ps` ausführen. | Container erscheint in der ausgegebenen Liste.                                                                    | OK       |
+| 2.1             | 2             | PoC ist am Laufen                                          | Docker       | Mit der Lösung geht man durch das Spiel bis man fertig ist.                                                | Eine Flagge erscheint.                                                                                            | NOK,     |
+| 3.1             | 3             | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler öffnet die Unterseite Lösungen und sieht sie sich an.                                         | Die Barrieren haben unterschiedliche Lösungswege                                                                 | OK       |
+| 4.1             | 4             | PoC ist am Laufen                                          | Docker       | Ohne Lösungen die Barrieren überwinden                                                                    | IT-Lehrperson oder Klassenkamerad hat die Flagge vor sich.                                                        | OK       |
+| 5.1             | 5             | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler öffnet die Unterseite mit der Anleitung und führt die Anweisungen darin aus.                  | Der Spieler ist startklar und weiss was er/sie zu tun hat.                                                        | OK       |
+| 6.1             | 6             | PoC ist am Laufen                                          | Docker       | Alle Flaggen finden.                                                                                        | Die Flaggen sind im Format: flag{challenge_name}                                                                  | OK       |
+| 7.1             | 7             | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler öffnet die Unterseite Lösungen und sieht sie sich an.                                         | Benutzer kann die Barriere überwinden.                                                                           | OK       |
+| 8.1             | 8             | PoC am Laufen                                              | Docker       | Der Spieler versucht mit Hilfe von Kenntnissen aus der Informatik die Barrieren zu überwinden.             | Der Spieler findet die Flaggen.                                                                                   | OK       |
+| 9.1             | 9             | Shell/Terminal ist offen                                   | Docker       | Der Spieler gibt den Befehl`docker pull <registry URL>` ein.                                                | Das Image wird gepullt.                                                                                           | OK       |
+| 10.1            | 10            | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler geht zur Unterseite der Anleitung und sieht sie sich an.                                        | Ein Regelwerk ist für den Spieler ersichtlich.                                                                   | OK       |
+| 11.1            | 11            | GH-Pages-Dokumentation ist offen und das PoC ist am Laufen | Chrome       | Der Spieler öffnet die Anleitung und liest sich die Hinweise durch.                                        | Mit den Hinweisen ist der Spieler in der Lage die Barriere zu überwinden, ohne dass er die Lösung erfahren hat. | OK       |
+
+#### Testfazit
+
 ## Auswerten
+
+#### Reflexion
+
+
+
+#### Verifikation
