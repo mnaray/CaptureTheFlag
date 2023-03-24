@@ -11,9 +11,13 @@ function myFunction() {
         database: "profiles",
     });
 
+    const username = "admin"; // user input
+    const password = "password"; // user input
+    const queryString = `SELECT username, password FROM users WHERE username = ${username} HAVING password = ${password}`;
+
     con.connect(function (err) {
         if (err) throw err;
-        con.query("SELECT * FROM profiles", function (err, result, fields) {
+        con.query(queryString, function (err, result, fields) {
             if (err) throw err;
             console.log(result);
         });
