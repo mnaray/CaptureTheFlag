@@ -1,6 +1,6 @@
 var mysql = require ('mysql');
 
-document.getElementById("myform").addEventListener("click", myFunction); 
+document.getElementById("myForm").addEventListener("click", myFunction); 
 
 // Dieser Code und Zeile 1 ist von https://www.w3schools.com/nodejs/nodejs_mysql_select.asp
 function myFunction(){
