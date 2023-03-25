@@ -1,30 +1,18 @@
-var mysql = require("mysql");
-
-document.getElementById("myForm").addEventListener("click", myFunction);
-
-// Dieser Code und Zeile 1 ist von https://www.w3schools.com/nodejs/nodejs_mysql_select.asp
-function myFunction() {
-    var con = mysql.createConnection({
-        host: "localhost",
-        user: "yourusername",
-        //password: "yourpassword",
-        database: "profiles",
-    });
-
-    const username = "admin"; // user input
-    const password = "password"; // user input
-    // select username, password from users where username = "admin" having password = "fjka" or "1"="1";
-    // SELECT username, password FROM users WHERE username = ${username} HAVING password = ${password} OR "1"="1";
-    const queryString = `SELECT username, password FROM users WHERE username = ${username} HAVING password = ${password}`;
-
-    con.connect(function (err) {
-        if (err) throw err;
-        con.query(queryString, function (err, result, fields) {
-            if (err) throw err;
-            console.log(result);
-        });
-    });
-}
-
-// This might help:
+// Diser Code wurde mit der HILFE von folgendem Link geschrieben:
 // https://blog.logrocket.com/building-simple-login-form-node-js/
+
+const express = require("express");
+const mysql = require("mysql");
+
+const app = express();
+
+const db = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    database: "profiles",
+});
+
+db.connect((error) => {
+    // error handling
+    error ? console.error(error) : console.log("Connected to DB!");
+});
