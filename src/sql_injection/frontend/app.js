@@ -7,7 +7,7 @@ const mysql = require("mysql");
 const app = express();
 
 const db = mysql.createConnection({
-    host: "localhost",
+    host: "usersdb",
     user: "root",
     database: "profiles",
 });
