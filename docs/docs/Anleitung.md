@@ -238,11 +238,13 @@ Die eigentliche Injection findet hier im Passwortfeld statt. Der Nutzername soll
 
 <details><summary>3. Hinweis</summary>
 <p>
+
 Die Query im für das Loginfenster sieht so aus:<br/>
-<code>
-SELECT username, password FROM users<br/>
-WHERE username = '[Eingabe Nutzername]'<br/>
+```sql
+SELECT username, password FROM users
+WHERE username = '[Eingabe Nutzername]'
 HAVING password = '[Eingabe Passwort]';
-</code>
+```
+
 </p>
 </details>
