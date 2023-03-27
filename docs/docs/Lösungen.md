@@ -35,6 +35,8 @@ for n in $(seq 10000); do
 done
 ```
 
+Dieses Script muss sich in der gleichen Directory befinden wie `flag.txt.sh`. Im Normalfall müssen noch Rechte and die Datei ausgeteilt werden, damit diese ausgeführt werden kann. (`chmod +x meineDatei.bsp`)
+
 :::caution
 
 Bitte beachten, dass dieses Script nicht in BASH, sondern in ASH geschrieben ist. Das ist die Shell für die Alpine distribution.

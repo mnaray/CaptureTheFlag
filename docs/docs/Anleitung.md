@@ -133,6 +133,7 @@ Zusätzliche Informationen:
 - Der Pin muss nicht unbedingt vierstellig sein.
 - Das zu entschlüsselnde File befindet sich im Filesystem des Containers unter */home/root*
 - Es wird **nicht** BASH im Container verwendet, sondern die **Alpine Shell**.
+- Vergiss nicht Rechte an auszuführende Dateien auszuteilen! (`chmod +x meineDatei.bsp`)
 
 Um zu starten:
 
