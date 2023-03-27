@@ -6,7 +6,22 @@ Title: Lösungen
 # Lösungen
 
 ## Bruteforce
-Der Code:
+
+### Erklärung
+
+Das untenstehende Script geht alle möglichen Zahlenkombinationen (0 - 9999) durch, bis das Passwort erraten worden ist. Wenn die Zahlenkombination korrekt ist, wird die Zahlenkombination ausgegeben. Wenn die Zahlenkombination nicht korrekt ist, wird der Vorgang wiederholt.
+
+Es wird openssl mit der Methode aes-256-cbc verwendet. Bei jeder Iteration wird eine höhere Zahl alls passphrase eingegeben. Sobald das entschlüsselte Resultat im Format der gewünschten Flagge ist, wird die Schleife gestoppt und die entschlüsselte Datei mit der Flagge in `out.txt` gespeichert.
+
+:::note
+
+Die Zahlenkombination ändert sich jedes Mal, wenn dieser Container gestartet wird. Nur weil ein Mal eine Kombination funktioniert hat, wird sie ein anderes Mal nicht dieselbe sein.
+
+:::
+
+### Script
+
+```bash title="solution.sh"
 for n in $(seq 10000); do
     i=$(($n - 1))
     DECRYPTED=$(cat flag.txt.enc | openssl aes-256-cbc -d -a -pass pass:$i)
@@ -18,8 +33,13 @@ for n in $(seq 10000); do
         echo "Wrong password: $i"
     fi
 done
+```
 
-Dieser Code geht alle möglichen Zahlenkombinationen durch, bis das Passwort erraten worden ist. Wenn die Zahlenkombination korrekt ist, wird die Zahlenkombination ausgegeben. Wenn die Zahlenkombination nicht korrekt ist, wird die Schleife wiederholt. 
+:::caution
+
+Bitte beachten, dass dieses Script nicht in BASH, sondern in ASH geschrieben ist. Das ist die Shell für die Alpine distribution.
+
+:::
 
 
 ## SQL injection
