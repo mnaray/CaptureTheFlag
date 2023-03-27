@@ -213,12 +213,17 @@ Schreibe dir eine Query auf, die möglicherweise verwendet wird, um die Datenban
 
 <details><summary>2. Hinweis</summary>
 <p>
-Wie kommentiert man etwas in SQL aus? Versuche den Rest der ursprünglichen Query ungültig zu machen, indem du ihn auskommentierst.
+Die eigentliche Injection findet hier im Passwortfeld statt. Der Nutzername soll "admin" sein.
 </p>
 </details>
 
 <details><summary>3. Hinweis</summary>
 <p>
-Die eigentliche Injection findet im Passwortfeld statt. Der Nutzername soll "admin" sein.
+Die Query im für das Loginfenster sieht so aus:<br/>
+<code>
+SELECT username, password FROM users<br/>
+WHERE username = '[Eingabe Nutzername]'<br/>
+HAVING password = '[Eingabe Passwort]';
+</code>
 </p>
 </details>
