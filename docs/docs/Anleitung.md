@@ -186,7 +186,26 @@ Erstelle eine Datei mit dem Namen `docker-compose.yaml`.
 In diese Datei sollst du folgenden Inhalt einfügen:
 
 ```yml
-docker-compose inhalt hier einfügen!
+version: '3.8'
+
+services:
+  database:
+    image: mnaray/sql_injection_db:latest
+    container_name: usersdb
+    restart: always
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+
+  server:
+    image: mnaray/sql_injection_server:latest
+    container_name: server
+    restart: always
+    depends_on:
+      - database
+    links:
+      - database
+    ports:
+      - "80:80"
 ```
 
 Sobald du den Inhalt eingefügt hast, navigiere mit der Kommandozeile an den Ort der Datei.  
@@ -198,7 +217,7 @@ docker-compose up -d
 
 Es kann ein wenig dauern bis alles ausgeführt wurde, wenn du die Dockerimages noch nicht auf deinem Gerät hast. Das ist nicht schlimm, es wird alles automatisch heruntergeladen und installiert, wenn der Inhalt von der docker-compose-Datei stimmt.
 
-Wenn alles hochgefahren ist, kannst du nun einen beliebigen Browser öffnen und `http://localhost` als URL eingeben. Es soll sich eine schlichte Loginseite öffnen, welche der Startpunkt der Challenge ist.
+Wenn alles vollständig hochgefahren ist, kannst du nun einen beliebigen Browser öffnen und `http://localhost` als URL eingeben. Es soll sich eine einfache Loginseite öffnen, welche der Startpunkt der Challenge ist. Dort kannst du dann versuchen, das Login zu umgehen und dich als "admin" anzumelden.
 
 ### Hilfestellungen
 
