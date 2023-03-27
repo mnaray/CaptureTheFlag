@@ -19,4 +19,4 @@ services:
     links:
       - database
     ports:
-      - "3000:80"
+      - "80:80"
