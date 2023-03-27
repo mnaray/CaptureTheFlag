@@ -67,6 +67,7 @@ Hier sind alle Quellen aufgelistet, welche während dem Aublauf des Projekts als
 - [Andere Methode für Verschlüsselung mit OpenSSL](https://stackoverflow.com/questions/33718005/how-to-encrypt-and-decrypt-a-string-text-in-shell-linux-environment)
 - [For-Schleifen in Bash](https://www.cyberciti.biz/faq/bash-for-loop/)
 - [SQL Injection](https://portswigger.net/web-security/sql-injection#:~:text=SQL%20injection%20(SQLi)%20is%20a,not%20normally%20able%20to%20retrieve.)
+- [MySQL-Connection mit Node](https://www.w3schools.com/nodejs/nodejs_mysql_select.asp)
 
 ## Planen
 

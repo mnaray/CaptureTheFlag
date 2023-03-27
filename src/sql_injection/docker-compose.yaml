@@ -2,19 +2,21 @@ version: '3.8'
 
 services:
   database:
-    image: mysql:latest
+    build: ./database/
+    image: mnaray/sql_injection_db:test
     container_name: usersdb
     restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD=password
-    ports:
-      - "3306:3306"
-    volumes:
-      - ./database/profiles.sql:/var/sql/profiles.sql # SQL-Script
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
 
-  # webserver:
-  #   image: node:latest
-  #   container_name: loginpage
-  #   restart: always
-  #   ports:
-  #     - "3000:80"
+  server:
+    build: ./frontend/
+    image: mnaray/sql_injection_server:test
+    container_name: server
+    restart: always
+    depends_on:
+      - database
+    links:
+      - database
+    ports:
+      - "80:80"

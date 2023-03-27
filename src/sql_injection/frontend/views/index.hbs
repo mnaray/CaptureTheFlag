@@ -1,0 +1,38 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+    </head>
+
+    <!--Dieses Login habe ich aus meinem alten Projekt titepasile/projectBlogWebsite von GitHub kopiert-->
+    <body>
+        <form action="/" method="post">
+            <div>
+                <label>Username</label>
+                <br />
+                <input
+                    type="text"
+                    name="username"
+                    placeholder="Enter unsername"
+                />
+            </div>
+            <div>
+                <label>Password</label>
+                <br />
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Enter password"
+                />
+            </div>
+            <div class="button-form">
+                <input type="submit" id="submitButton" />
+            </div>
+        </form>
+        {{#if message}}
+            <h4 style="color:Tomato;">{{message}}</h4>
+        {{/if}}
+    </body>
+</html>
