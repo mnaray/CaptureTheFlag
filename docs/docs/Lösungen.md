@@ -6,6 +6,7 @@ Title: Lösungen
 # Lösungen
 
 ## Bruteforce
+Ein Brute-Force-Angriff ist eine Angriffsmethode bei der durch Ausprobieren (Trial and Error, Versuch und Irrtum) versucht wird, um verschlüsselte Daten wie Passwörter oder Schlüssel durch „rohe Gewalt“ zu entschlüsseln, anstatt intellektuelle Strategien anzuwenden. In diesem Teil unseres Spiels war es deine Aufgabe diese Methode anzuwenden. Wie du das angegangen bist ist deine Entscheidung gewesen. Wir haben dir empfohlen ein Code zu schreiben, der die Arbeit des Enschlüsselns für dich übernimmt. Hier ist unsere Lösung:
 
 ### Erklärung
 
@@ -15,7 +16,7 @@ Es wird openssl mit der Methode aes-256-cbc verwendet. Bei jeder Iteration wird 
 
 :::note
 
-Die Zahlenkombination ändert sich jedes Mal, wenn dieser Container gestartet wird. Nur weil ein Mal eine Kombination funktioniert hat, wird sie ein anderes Mal nicht dieselbe sein.
+Jedes Mal, wenn der Container gestartet wird, ändert sich die Zahlenkombination. Nur weil ein Mal eine Kombination funktioniert hat, wird sie ein anderes Mal nicht dieselbe sein.
 
 :::
 
@@ -45,12 +46,21 @@ Bitte beachten, dass dieses Script nicht in BASH, sondern in ASH geschrieben ist
 
 
 ## SQL injection
+Bei einer SQL-Injection (kurz SQLi) nutzen Cyberkriminelle gezielt Sicherheitslücken im Quelltext von Software aus, um etwa über Eingabemasken eigene Befehle oder Schadcode in Programme einzubinden. Auf diese Weise gelangen Angreifer an wertvolle Datensätze.
 
 ### Erklärung
 
 Bei einem Eingabefeld, welches anfällig für SQL-Injection ist, wird normalerweise der Inhalt vom Feld in einer Variable gespeichert. Diese Variable wird dann direkt in den String, welcher die Query enthaltet verkettet (concatenate). Deshalb kann man mit ein wenig Geschick eine Eingabe machen, welche Teile eines SQL Befehls beinhaltet.
 
 Das eingegebene wird so mit in die Query genommen und von der Datenbank ausgeführt. So kann man Abfrageresultate oder sogar den Datenbestand manipulieren.
+
+Um dieses Level lösen zu können, musst du der Anleitung Schritt für Schritt folgen. Erst wenn du dir sicher bist, dass du alle wichtigen Dateien und Informationen hast, kannst du loslegen.
+
+Um das Passwort umgehen zu können, musstest du die Injection im Passwortfeld anwenden. Der Benutzernme ist "admin". Im Passwortfeld musst du folgende Query eingeben: 'OR' 1'='1
+
+Weil die Eingabe des Korrekten Passworts ein true von der Datenbnank zurückschickt, ist es dem Benutzer möglich sich einzuloggen. Diese Abfrage trickt die Datenbank aus, mit dem Schlüsselbefehl OR 1=1. Das Funktioniert, weil das OR 1=1 ein true zurückgibt, weil 1=1 ist. Somit ist es dir (dem Angreifer) möglich sich anzumelden.
+
+Die Eingabe deiser Query löst die folgende Abfrage aus:
 
 ```sql
 SELECT username, password FROM users
