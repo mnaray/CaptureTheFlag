@@ -2,7 +2,6 @@
 sidebar_position: 1
 title: Dokumentation
 ---
-
 :::note
 
 Dies ist die Dokumentation des ganzen Projekts. Sie wurde nach IPERKA umgesetzt. Es wird der Ablauf und die Vorgehensweise des ganzen Projekts dokumentiert.
@@ -230,7 +229,7 @@ Diese Flaggen müssen alle im folgenden Format sein: `flag{challenge_name}`
 | Testf.<br />Nr. | Anf.<br />Nr. | Voraussetzung                                              | Testumgebung | Eingabe                                                                                                     | Erw. Ausgabe                                                                                                      | Ergebnis |
 | :---------------- | --------------- | :----------------------------------------------------------- | -------------- | :------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | ---------- |
 | 1.1             | 1             | PoC ist vorhanden                                          | Docker       | Image von der Registry pullen und mit`docker run` starten. Als nächstes den Befehl `docker ps` ausführen. | Container erscheint in der ausgegebenen Liste.                                                                    | OK       |
-| 2.1             | 2             | PoC ist am Laufen                                          | Docker       | Mit der Lösung geht man durch das Spiel bis man fertig ist.                                                | Eine Flagge erscheint.                                                                                            | NOK,     |
+| 2.1             | 2             | PoC ist am Laufen                                          | Docker       | Mit der Lösung geht man durch das Spiel bis man fertig ist.                                                | Eine Flagge erscheint.                                                                                            | OK       |
 | 3.1             | 3             | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler öffnet die Unterseite Lösungen und sieht sie sich an.                                         | Die Barrieren haben unterschiedliche Lösungswege                                                                 | OK       |
 | 4.1             | 4             | PoC ist am Laufen                                          | Docker       | Ohne Lösungen die Barrieren überwinden                                                                    | IT-Lehrperson oder Klassenkamerad hat die Flagge vor sich.                                                        | OK       |
 | 5.1             | 5             | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler öffnet die Unterseite mit der Anleitung und führt die Anweisungen darin aus.                  | Der Spieler ist startklar und weiss was er/sie zu tun hat.                                                        | OK       |
@@ -247,4 +246,26 @@ Diese Flaggen müssen alle im folgenden Format sein: `flag{challenge_name}`
 
 #### Reflexion
 
-#### Verifikation
+Unser Ziel in diesem Projekt war es ein Proof-Of-Concept für ein Capture The Flag Spiel zu erstellen, um zu beweisen, dass es möglich ist eins solches mit unserer Vorgehensweise zu machen.
+
+Für dieses Projekt haben wir viel Zeit in das Informieren und Planen investiert. Diese Zeitinvestition hat uns im Verlauf vom Projekt sehr geholfen, da wir nicht auf Unerwartetes gestossen sind. Wir konnte somit gut im Zeitplan bleiben und mussten selten ausserhalb der Schule arbeiten. 
+
+Die Arbeit am Projekt verlief von Beginn an gut. Wir konnten uns schnell für eine geignete Lösung entscheiden und hatten die selben Vorstellungen vom Endprodukt. Das hat uns viel kostbare Zeit gespart.
+
+Unser Projekt ist vollständig, wir konnten alle relevanten Anforderungen erfüllen und sin dmit dem Endprodukt zufrieden.
+
+#### Schlussfolgerung vom PoC
+
+##### Funktionalität
+
+Unser Endprodukt ist funktional und erfüllt seinen Zweck. Beide Levels können ohne Probleme durchgespielt werden. Die Anleitung und die Lösung haben einen Nutzen.
+
+##### Umsetzbarkeit
+
+Mit unseren Kenntnissen ist ein CTF in einem grösserem Mass gut umsetzbar, wir bräuchten einfach mehr Zeit. Es steht dem grösseren Projekt nichts im Wege, beim PoC ist alles reibungslos verlaufen.
+
+##### Erfüllung der Anforderungen
+
+Weil wir im PoC alle Anforderungen erfüllt haben, könnten wir im eigentlichen Spiel dasselbe Format verwenden. Es ist simpel zu implementieren und es gibt eine gewisse Einheitlichkeit.
+
+Wir können uns gut vorstellen, dass wir es in einem grösseren Mass umsetzten könnten.
