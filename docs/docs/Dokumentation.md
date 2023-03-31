@@ -244,13 +244,13 @@ Diese Flaggen müssen alle im folgenden Format sein: `flag{challenge_name}`
 | 10.1            | 10            | GH-Pages-Dokumentation ist offen                           | Chrome       | Der Spieler geht zur Unterseite der Anleitung und sieht sie sich an.                                           | Ein Regelwerk ist für den Spieler ersichtlich.                                                                   | Es sind zwar "zusätzliche Informationen" vorhanden, es gibt aber kein klares Regelwerk.                         | NOK      |
 | 11.1            | 11            | GH-Pages-Dokumentation ist offen und das PoC ist am Laufen | Chrome       | Der Spieler öffnet die Anleitung und liest sich die Hinweise durch.                                           | Mit den Hinweisen ist der Spieler in der Lage die Barriere zu überwinden, ohne dass er die Lösung erfahren hat. | Anfangs hatte der Mitschüler Probleme, jedoch klappte es nach ein wenig Recherche. Die Hinweise haben geholfen. | OK       |
 
-#### Testfazit
+### Testfazit
 
 Fast alle Tests waren erfolgreich. Nur ein einziger (10.1) war nicht OK. Dort geht es um ein Regelwerk, das nicht implementiert wurde. Aber da es eine kann-Anforderungen ist (Anforderung Nr. 10), wird es nicht mehr implementiert.
 
 ## Auswerten
 
-#### Reflexion
+### Reflexion
 
 Unser Ziel in diesem Projekt war es ein Proof-Of-Concept für ein Capture The Flag Spiel zu erstellen, um zu beweisen, dass es möglich ist eins solches mit unserer Vorgehensweise zu machen.
 
@@ -260,17 +260,17 @@ Die Arbeit am Projekt verlief von Beginn an gut. Wir konnten uns schnell für ei
 
 Unser Projekt ist vollständig, wir konnten alle relevanten Anforderungen erfüllen und sin dmit dem Endprodukt zufrieden.
 
-#### Schlussfolgerung vom PoC
+### Schlussfolgerung vom PoC
 
-##### Funktionalität
+#### Funktionalität
 
 Unser Endprodukt ist funktional und erfüllt seinen Zweck. Beide Levels können ohne Probleme durchgespielt werden. Die Anleitung und die Lösung haben einen Nutzen.
 
-##### Umsetzbarkeit
+#### Umsetzbarkeit
 
 Mit unseren Kenntnissen ist ein CTF in einem grösserem Mass gut umsetzbar, wir bräuchten einfach mehr Zeit. Es steht dem grösseren Projekt nichts im Wege, beim PoC ist alles reibungslos verlaufen.
 
-##### Erfüllung der Anforderungen
+#### Erfüllung der Anforderungen
 
 Weil wir im PoC alle Anforderungen erfüllt haben, könnten wir im eigentlichen Spiel dasselbe Format verwenden. Es ist simpel zu implementieren und es gibt eine gewisse Einheitlichkeit.
 
