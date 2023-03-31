@@ -252,4 +252,26 @@ Fast alle Tests waren erfolgreich. Nur ein einziger (10.1) war nicht OK. Dort ge
 
 #### Reflexion
 
-#### Verifikation
+Unser Ziel in diesem Projekt war es ein Proof-Of-Concept für ein Capture The Flag Spiel zu erstellen, um zu beweisen, dass es möglich ist eins solches mit unserer Vorgehensweise zu machen.
+
+Für dieses Projekt haben wir viel Zeit in das Informieren und Planen investiert. Diese Zeitinvestition hat uns im Verlauf vom Projekt sehr geholfen, da wir nicht auf Unerwartetes gestossen sind. Wir konnte somit gut im Zeitplan bleiben und mussten selten ausserhalb der Schule arbeiten. 
+
+Die Arbeit am Projekt verlief von Beginn an gut. Wir konnten uns schnell für eine geignete Lösung entscheiden und hatten die selben Vorstellungen vom Endprodukt. Das hat uns viel kostbare Zeit gespart.
+
+Unser Projekt ist vollständig, wir konnten alle relevanten Anforderungen erfüllen und sin dmit dem Endprodukt zufrieden.
+
+#### Schlussfolgerung vom PoC
+
+##### Funktionalität
+
+Unser Endprodukt ist funktional und erfüllt seinen Zweck. Beide Levels können ohne Probleme durchgespielt werden. Die Anleitung und die Lösung haben einen Nutzen.
+
+##### Umsetzbarkeit
+
+Mit unseren Kenntnissen ist ein CTF in einem grösserem Mass gut umsetzbar, wir bräuchten einfach mehr Zeit. Es steht dem grösseren Projekt nichts im Wege, beim PoC ist alles reibungslos verlaufen.
+
+##### Erfüllung der Anforderungen
+
+Weil wir im PoC alle Anforderungen erfüllt haben, könnten wir im eigentlichen Spiel dasselbe Format verwenden. Es ist simpel zu implementieren und es gibt eine gewisse Einheitlichkeit.
+
+Wir können uns gut vorstellen, dass wir es in einem grösseren Mass umsetzten könnten.
