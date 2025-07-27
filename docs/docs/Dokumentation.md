@@ -254,7 +254,7 @@ Fast alle Tests waren erfolgreich. Nur ein einziger (10.1) war nicht OK. Dort ge
 
 Unser Ziel in diesem Projekt war es ein Proof-Of-Concept für ein Capture The Flag Spiel zu erstellen, um zu beweisen, dass es möglich ist eins solches mit unserer Vorgehensweise zu machen.
 
-Für dieses Projekt haben wir viel Zeit in das Informieren und Planen investiert. Diese Zeitinvestition hat uns im Verlauf vom Projekt sehr geholfen, da wir nicht auf Unerwartetes gestossen sind. Wir konnte somit gut im Zeitplan bleiben und mussten selten ausserhalb der Schule arbeiten. 
+Für dieses Projekt haben wir viel Zeit in das Informieren und Planen investiert. Diese Zeitinvestition hat uns im Verlauf vom Projekt sehr geholfen, da wir nicht auf Unerwartetes gestossen sind. Wir konnten somit gut im Zeitplan bleiben und mussten selten ausserhalb der Schule arbeiten. 
 
 Die Arbeit am Projekt verlief von Beginn an gut. Wir konnten uns schnell für eine geignete Lösung entscheiden und hatten die selben Vorstellungen vom Endprodukt. Das hat uns viel kostbare Zeit gespart.
 
